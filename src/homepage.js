@@ -2,6 +2,8 @@ import backgroundImg from './ResturantImg.jpg';
 
 function homePage(){
     const contentContainer = document.getElementById('content');
+    
+    
 
     const header = document.createElement('h2');
     header.classList.add('header');
@@ -15,6 +17,8 @@ function homePage(){
     contentContainer.appendChild(header);
     contentContainer.appendChild(subHeader);
     contentContainer.appendChild(image);
+
+    
 
 
 
