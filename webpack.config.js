@@ -6,7 +6,8 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
- module: {
+  devtool: 'source-map',
+  module: {
    rules: [
      {
        test: /\.css$/i,
@@ -15,6 +16,11 @@ module.exports = {
      {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
       type: 'asset/resource',
+    },
+    {
+      test: /\.js$/,
+      enforce: 'pre',
+      loader: 'source-map-loader'
     },
    ],
  },
