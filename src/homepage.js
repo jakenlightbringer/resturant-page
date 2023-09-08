@@ -1,4 +1,4 @@
-import backgroundImg from './ResturantImg.jpg';
+import backgroundImg from '/home/jake/resturant-page/src/Images/ResturantImg.jpg';
 
 function homePage(){
     const contentContainer = document.getElementById('content');
