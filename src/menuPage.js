@@ -1,4 +1,8 @@
-import classicImg from 'src/Images/classic.jpg'
+import classicMenuImg from '/home/jake/resturant-page/src/Images/classic.jpg'
+import japImg from '/home/jake/resturant-page/src/Images/japchae-menu.jpg';
+import kimchiImg from '/home/jake/resturant-page/src/Images/KimchifriedRice.jpg';
+import topBab from '/home/jake/resturant-page/src/Images/topbab.jpg'
+
 
 function menu(){
     
@@ -11,5 +15,11 @@ function menu(){
     classicContainer.setAttribute('id', 'classic-container');
 
     const classicImg = document.createElement('img');
+    classicImg.src = classicMenuImg;
+    classicContainer.appendChild(classicImg);
 
+    menuContainer.appendChild(classicContainer);
+    contentContainer.appendChild(menuContainer);
 }
+
+export default menu;

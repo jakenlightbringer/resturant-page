@@ -1,6 +1,7 @@
 import homePage from "./homepage";
 import navBar from "./navbar";
-import contactPage from "./contactPage"; 
+import contactPage from "./contactPage";
+import menuPage from './menuPage'
 import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navBar();
     const contactButtons = document.querySelectorAll('.contact-button');
     const homeButtons = document.querySelectorAll(".home-button");
+    const menuButtons = document.querySelectorAll('.menu-button');
 
     contactButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -23,7 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
             homePage();
         });
     });
-
+    menuButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            console.log('menu button clicked');
+            clearContent();
+            menuPage();
+        });
+    });
     
 });
 

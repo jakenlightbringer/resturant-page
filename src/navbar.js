@@ -1,5 +1,17 @@
+import icon from '/home/jake/resturant-page/src/Images/cooking.png';
+
+
 function navBar(){
     const navBarContainer = document.getElementById('navbar');
+    const navBarImage = document.createElement('div')
+    const logo = document.createElement('img');
+    logo.setAttribute('id', 'navbar-img');
+    logo.src = icon;
+
+    navBarImage.appendChild(logo);
+    navBarContainer.append(navBarImage);
+    
+
 
     const navList = document.createElement('ul');
 
@@ -13,7 +25,7 @@ function navBar(){
     const homeNavLink = document.createElement('a');
     homeNavLink.textContent = "Home"
     const menuNavLink = document.createElement('a');
-    menuNavLink.textContent = "About"
+    menuNavLink.textContent = "Menu"
     const contactNavLink = document.createElement('a');
     contactNavLink.textContent = "Contact"
 
