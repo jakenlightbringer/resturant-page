@@ -3,13 +3,11 @@ import icon from '/home/jake/resturant-page/src/Images/cooking.png';
 
 function navBar(){
     const navBarContainer = document.getElementById('navbar');
-    const navBarImage = document.createElement('div')
     const logo = document.createElement('img');
     logo.setAttribute('id', 'navbar-img');
     logo.src = icon;
 
-    navBarImage.appendChild(logo);
-    navBarContainer.append(navBarImage);
+    navBarContainer.appendChild(logo);
     
 
 

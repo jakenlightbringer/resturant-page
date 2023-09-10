@@ -1,15 +1,23 @@
 import homePage from "./homepage";
 import navBar from "./navbar";
 import contactPage from "./contactPage";
-import menuPage from './menuPage'
+import menuPage from './menuPage';
+
+
 import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
     homePage();
     navBar();
+    
+    
+    
     const contactButtons = document.querySelectorAll('.contact-button');
     const homeButtons = document.querySelectorAll(".home-button");
     const menuButtons = document.querySelectorAll('.menu-button');
+    
+
+    
 
     contactButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -42,3 +50,4 @@ function clearContent(){
         contentContainer.removeChild(contentContainer.firstChild);
     }
 }
+
