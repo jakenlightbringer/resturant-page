@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'PageFont';
-    src: url('/home/jake/resturant-page/src/NotoSansOsmanya-Regular.ttf') format('truetype');
+    src: url('NotoSansOsmanya-Regular.ttf') format('truetype');
 }
 :root{
     --font-size-button: 15px
@@ -11,7 +11,7 @@
 }
 #navbar{
     
-    border-bottom: 5px solid #212120;
+    border: 5px solid #212120;
     
 }
 #navbar *{
@@ -78,4 +78,24 @@ h4{
 }
 .image-container > img{
     border: 2px solid #212120;
+}
+.contact-header{
+    display: flex;
+    font-family: 'PageFont';
+    font-size: 24px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.contact-information{
+    display: flex;
+    justify-content: center;
+}
+table{
+    font-family: 'PageFont';
 }
