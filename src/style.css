@@ -99,3 +99,36 @@ h4{
 table{
     font-family: 'PageFont';
 }
+.menu-container{
+    display: grid;
+    grid-template-columns: 210px 210px;
+    grid-template-rows: 210px 210px;
+    grid-gap: 40px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    
+
+
+}
+.classic-item{
+   text-align: center;
+   font-family: Impact, 'Arial Narrow Bold', sans-serif;
+   font-weight: bold;
+
+}
+.japchae-item{
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.kimchi-item{
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.topbab-item{
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
